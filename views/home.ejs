@@ -1,0 +1,10 @@
+<%-include('partials/header')-%>
+<h1>HOME</h1>
+<p><%=homeStartingContent%></p>
+<hr><br>
+<%posts.forEach(function(i){%>
+    <h3><%=i.postTitle%></h3>
+    <h4><%=i.postBody%></h4>
+<%})%>
+
+<%-include('partials/footer')-%>
