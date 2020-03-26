@@ -3,9 +3,9 @@
 <form action="/compose" method="post">
     <div class="form-group"></div>
         <label for="postTitle">Title</label><br>
-        <input class="form-control" type="text" name="postTitle" autocomplete="off">
+        <input class="form-control" type="text" name="postTitle" autocomplete="off" required>
         <label for="postBody">Post</label>
-        <textarea class="form-control" name="postBody" cols="30" rows="10"></textarea><br>
+        <textarea class="form-control" name="postBody" cols="30" rows="10" required></textarea><br>
     <button class="btn btn-primary btn-lg" type="submit">Publish</button>
     </div>
 </form>

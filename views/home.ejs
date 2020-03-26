@@ -4,7 +4,6 @@
 <hr><br>
 <%posts.forEach(function(i){%>
     <h3><%=i.postTitle%></h3>
-    <h4><%=i.postBody.substring(0, 2) + '...'%></h4>
+    <h4><%=i.postBody.substring(0,100) + '...'%><a href="/posts/<%=i.postTitle%>">read more</a></h4>  
 <%})%>
-
 <%-include('partials/footer')-%>
